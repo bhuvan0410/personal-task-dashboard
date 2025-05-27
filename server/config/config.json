@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "kiit@123",
+    "database": "task_dashboard",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
