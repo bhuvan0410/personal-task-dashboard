@@ -66,8 +66,6 @@ Copy
 Edit
 cd client
 npm test
-
-
 🎯 Design Decisions
 Redux was chosen over Context for more scalable global state handling.
 
@@ -87,3 +85,20 @@ personal-task-dashboard/
 ├── docker-compose.yml
 ├── Dockerfile (client + server)
 └── README.md
+⚠️ Known Issues / Future Improvements
+❌ Real-time WebSocket updates (Planned)
+
+❌ Offline Support (PWA) to be added
+
+❌ CI/CD via GitHub Actions (Future enhancement)
+
+🔄 UI Modernization phase with animations and layout enhancements (planned)
+
+⚠️ Minor visibility issues in dark mode fixed but may need polish
+
+📄 License
+This project is for educational and assessment purposes.
+
+🙌 Author
+Bhuvan Pagilla
+GitHub Profile
