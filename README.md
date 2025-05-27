@@ -33,6 +33,8 @@ A full-stack, responsive web application to help users manage daily tasks, track
 ```bash
 git clone https://github.com/bhuvan0410/personal-task-dashboard.git
 cd personal-task-dashboard
+
+
 2. Create Environment File
 Inside the server folder, create a .env file with the following:
 
@@ -85,7 +87,10 @@ personal-task-dashboard/
 ├── docker-compose.yml
 ├── Dockerfile (client + server)
 └── README.md
+
+
 ⚠️ Known Issues / Future Improvements
+
 ❌ Real-time WebSocket updates (Planned)
 
 ❌ Offline Support (PWA) to be added
