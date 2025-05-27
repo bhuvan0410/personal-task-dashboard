@@ -70,32 +70,39 @@ cd client
 npm test
 
 
-## 🧠 Design Rationale
+🧠 Design Rationale
+The architecture and tech stack for the Personal Task Dashboard were selected with scalability, developer experience, and responsiveness in mind.
 
-The architecture and tech stack for the Personal Task Dashboard were selected with scalability, developer experience, and responsiveness in mind:
+🔹 Frontend: React + Redux + Tailwind CSS
+React provides component-based architecture and scalability.
 
-### 🔹 Frontend: React + Redux + Tailwind CSS
-- **React** was chosen for its component-based architecture and strong ecosystem.
-- **Redux** was used for global state management to efficiently manage tasks and user session state.
-- **Tailwind CSS** enabled rapid UI development with utility-first styling and built-in dark mode support.
+Redux manages shared global state.
 
-### 🔹 Backend: Node.js + Express
-- **Express.js** offers lightweight, unopinionated routing and middleware capabilities, perfect for RESTful APIs.
-- **JWT Authentication** ensures secure, stateless session handling.
+Tailwind CSS enables utility-first styling with dark mode support.
 
-### 🔹 Database: PostgreSQL
-- **Relational DB model** aligns well with task-user-timeentry relationships.
-- **Primary/Foreign Keys and Indexes** are used to enforce integrity and optimize queries.
+🔹 Backend: Node.js + Express
+Express provides lightweight routing and middleware.
 
-### 🔹 Dev Environment: Docker
-- **Dockerized setup** ensures consistent environments across machines and streamlines deployment.
-- Separate services for frontend, backend, and database make the project modular and scalable.
+JWT allows secure, stateless user authentication.
 
-### 🔹 Additional Design Considerations:
-- **Dark/Light Mode Toggle**: Improves UX accessibility and user preference handling.
-- **Basic Unit Tests**: Added to ensure UI components function correctly.
-- **Error Boundaries**: Prevent the entire app from crashing on isolated failures.
-- **Modern UI/UX (Planned)**: Further enhancements like animations and layout upgrades are scoped for a future phase.
+🔹 Database: PostgreSQL
+Relational DB structure maps well to users, tasks, and time entries.
+
+Foreign key constraints and indexes ensure consistency and performance.
+
+🔹 Dockerized Environment
+Modular setup with isolated containers for frontend, backend, and DB.
+
+Ensures consistency across environments and simplifies deployment.
+
+🔹 Additional Considerations
+Dark/Light Mode Toggle for accessibility.
+
+Error Boundaries to handle rendering failures gracefully.
+
+Basic Unit Tests for UI reliability.
+
+Modern UI/UX enhancements scoped for future phase.
 
 
 
