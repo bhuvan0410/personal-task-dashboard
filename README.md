@@ -68,14 +68,36 @@ Copy
 Edit
 cd client
 npm test
-🎯 Design Decisions
-Redux was chosen over Context for more scalable global state handling.
 
-Tailwind CSS was used for rapid, responsive styling with dark mode support.
 
-Docker ensures consistent development and deployment environments.
+## 🧠 Design Rationale
 
-Nodemon in development (docker-compose.dev.yml) for real-time server reloads.
+The architecture and tech stack for the Personal Task Dashboard were selected with scalability, developer experience, and responsiveness in mind:
+
+### 🔹 Frontend: React + Redux + Tailwind CSS
+- **React** was chosen for its component-based architecture and strong ecosystem.
+- **Redux** was used for global state management to efficiently manage tasks and user session state.
+- **Tailwind CSS** enabled rapid UI development with utility-first styling and built-in dark mode support.
+
+### 🔹 Backend: Node.js + Express
+- **Express.js** offers lightweight, unopinionated routing and middleware capabilities, perfect for RESTful APIs.
+- **JWT Authentication** ensures secure, stateless session handling.
+
+### 🔹 Database: PostgreSQL
+- **Relational DB model** aligns well with task-user-timeentry relationships.
+- **Primary/Foreign Keys and Indexes** are used to enforce integrity and optimize queries.
+
+### 🔹 Dev Environment: Docker
+- **Dockerized setup** ensures consistent environments across machines and streamlines deployment.
+- Separate services for frontend, backend, and database make the project modular and scalable.
+
+### 🔹 Additional Design Considerations:
+- **Dark/Light Mode Toggle**: Improves UX accessibility and user preference handling.
+- **Basic Unit Tests**: Added to ensure UI components function correctly.
+- **Error Boundaries**: Prevent the entire app from crashing on isolated failures.
+- **Modern UI/UX (Planned)**: Further enhancements like animations and layout upgrades are scoped for a future phase.
+
+
 
 🧭 Folder Structure (Brief)
 bash
