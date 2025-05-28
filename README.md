@@ -33,9 +33,11 @@ A full-stack, responsive web application to help users manage daily tasks, track
 ```bash
 git clone https://github.com/bhuvan0410/personal-task-dashboard.git
 cd personal-task-dashboard
+```
 
+---
 
-2. Create Environment File
+### 2. Create Environment File
 Inside the server folder, create a .env file with the following:
 
 env
@@ -49,7 +51,9 @@ DB_HOST=postgres
 JWT_SECRET=super_secret_jwt_key
 ⚠️ Note: These values are set for Docker-based development. Adjust if running outside containers.
 
-3. Run with Docker
+---
+
+### 3. Run with Docker
 bash
 Copy
 Edit
@@ -60,7 +64,10 @@ Frontend: http://localhost:3000
 
 Backend: http://localhost:5000
 
-🧪 Testing
+---
+
+### 🧪 Testing
+
 Run unit tests using:
 
 bash
@@ -69,8 +76,10 @@ Edit
 cd client
 npm test
 
+---
 
-🧠 Design Rationale
+### 🧠 Design Rationale
+
 The architecture and tech stack for the Personal Task Dashboard were selected with scalability, developer experience, and responsiveness in mind.
 
 🔹 Frontend: React + Redux + Tailwind CSS
@@ -104,7 +113,7 @@ Basic Unit Tests for UI reliability.
 
 Modern UI/UX enhancements scoped for future phase.
 
-
+---
 
 🧭 Folder Structure (Brief)
 bash
