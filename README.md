@@ -115,19 +115,20 @@ Modern UI/UX enhancements scoped for future phase.
 
 ---
 
-🧭 Folder Structure (Brief)
-bash
-Copy
-Edit
+### 🧭 Folder Structure (Brief)
+- bash
+- Copy
+- Edit
 personal-task-dashboard/
-├── client/       # React frontend
-├── server/       # Node.js/Express backend
-├── docker-compose.yml
-├── Dockerfile (client + server)
-└── README.md
+- ├── client/       # React frontend
+- ├── server/       # Node.js/Express backend
+- ├── docker-compose.yml
+- ├── Dockerfile (client + server)
+- └── README.md
 
+---
 
-⚠️ Known Issues / Future Improvements
+### ⚠️ Known Issues / Future Improvements
 
 ❌ Real-time WebSocket updates (Planned)
 
